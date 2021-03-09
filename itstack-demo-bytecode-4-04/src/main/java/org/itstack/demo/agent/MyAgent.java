@@ -16,6 +16,7 @@ public class MyAgent {
         System.out.println("this is my agent：" + agentArgs);
 
         Executors.newScheduledThreadPool(1).scheduleAtFixedRate(new Runnable() {
+            @Override
             public void run() {
                 JvmStack.printMemoryInfo();
                 JvmStack.printGCInfo();

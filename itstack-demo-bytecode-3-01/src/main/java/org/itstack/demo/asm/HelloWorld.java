@@ -59,10 +59,12 @@ public class HelloWorld extends ClassLoader {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            if (null != out) try {
-                out.close();
-            } catch (IOException e) {
-                e.printStackTrace();
+            if (null != out) {
+                try {
+                    out.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         }
     }
