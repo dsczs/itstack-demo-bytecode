@@ -21,7 +21,7 @@ public class GenerateClazzMethod {
         // 添加方法
         CtMethod mainMethod = new CtMethod(CtClass.voidType, "main", new CtClass[]{pool.get(String[].class.getName())}, ctClass);
         mainMethod.setModifiers(Modifier.PUBLIC + Modifier.STATIC);
-        mainMethod.setBody("{System.out.println(\"hi javassist! Greetings from 小傅哥(bugstack.cn)\");}");
+        mainMethod.setBody("{System.out.println(\"hi javassist! Greetings from 小傅哥 war(bugstack.cn)\");}");
 
         ctClass.addMethod(mainMethod);
 
